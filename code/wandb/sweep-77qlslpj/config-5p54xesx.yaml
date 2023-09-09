@@ -1,0 +1,14 @@
+wandb_version: 1
+
+architecture:
+  value: CNN
+dataset:
+  value: Poems
+embedding_dim:
+  value: 512
+epochs:
+  value: 100
+learning_rate:
+  value: 0.045274784415845086
+optimizer:
+  value: adam

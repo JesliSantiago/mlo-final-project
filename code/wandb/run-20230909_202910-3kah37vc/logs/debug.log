@@ -1,0 +1,40 @@
+2023-09-09 20:29:10,239 INFO    Thread-24 :40832 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-09 20:29:10,240 INFO    Thread-24 :40832 [wandb_setup.py:_flush():76] Configure stats pid to 40832
+2023-09-09 20:29:10,240 INFO    Thread-24 :40832 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Jesli's Laptop\.config\wandb\settings
+2023-09-09 20:29:10,240 INFO    Thread-24 :40832 [wandb_setup.py:_flush():76] Loading settings from c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\wandb\settings
+2023-09-09 20:29:10,240 INFO    Thread-24 :40832 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'uncategorized', 'entity': 'msds_mlops2023_lt2', 'root_dir': "c:\\Users\\Jesli's Laptop\\Desktop\\Acads\\MLO\\mlo-final-project\\code", 'run_id': '3kah37vc', 'sweep_param_path': "c:\\Users\\Jesli's Laptop\\Desktop\\Acads\\MLO\\mlo-final-project\\code\\wandb\\sweep-aarxv1r7\\config-3kah37vc.yaml", 'sweep_id': 'aarxv1r7'}
+2023-09-09 20:29:10,240 INFO    Thread-24 :40832 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-09 20:29:10,240 INFO    Thread-24 :40832 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-09-09 20:29:10,240 INFO    Thread-24 :40832 [wandb_init.py:_log_setup():524] Logging user logs to c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\wandb\run-20230909_202910-3kah37vc\logs\debug.log
+2023-09-09 20:29:10,241 INFO    Thread-24 :40832 [wandb_init.py:_log_setup():525] Logging internal logs to c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\wandb\run-20230909_202910-3kah37vc\logs\debug-internal.log
+2023-09-09 20:29:10,241 INFO    Thread-24 :40832 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001E1B2734A90>
+2023-09-09 20:29:10,241 INFO    Thread-24 :40832 [wandb_init.py:init():564] calling init triggers
+2023-09-09 20:29:10,241 INFO    Thread-24 :40832 [wandb_init.py:init():571] wandb.init called with sweep_config: {'architecture': 'CNN', 'dataset': 'Poems', 'embedding_dim': 512, 'epochs': 100, 'learning_rate': 0.003447070108965795, 'optimizer': 'sgd'}
+config: {}
+2023-09-09 20:29:10,241 INFO    Thread-24 :40832 [wandb_init.py:init():614] starting backend
+2023-09-09 20:29:10,241 INFO    Thread-24 :40832 [wandb_init.py:init():618] setting up manager
+2023-09-09 20:29:10,248 INFO    Thread-24 :40832 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2023-09-09 20:29:10,249 INFO    Thread-24 :40832 [wandb_init.py:init():624] backend started and connected
+2023-09-09 20:29:10,262 INFO    Thread-24 :40832 [wandb_run.py:_config_callback():1324] config_cb None None {'architecture': 'CNN', 'dataset': 'Poems', 'embedding_dim': 512, 'epochs': 100, 'learning_rate': 0.003447070108965795, 'optimizer': 'sgd'}
+2023-09-09 20:29:10,263 INFO    Thread-24 :40832 [wandb_run.py:_label_probe_notebook():1276] probe notebook
+2023-09-09 20:29:10,263 INFO    Thread-24 :40832 [wandb_run.py:_label_probe_notebook():1286] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-09-09 20:29:10,263 INFO    Thread-24 :40832 [wandb_init.py:init():715] updated telemetry
+2023-09-09 20:29:10,311 INFO    Thread-24 :40832 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-09-09 20:29:10,892 INFO    Thread-24 :40832 [wandb_run.py:_on_init():2220] communicating current version
+2023-09-09 20:29:10,960 INFO    Thread-24 :40832 [wandb_run.py:_on_init():2229] got version response 
+2023-09-09 20:29:10,961 INFO    Thread-24 :40832 [wandb_init.py:init():799] starting run threads in backend
+2023-09-09 20:29:11,119 INFO    Thread-24 :40832 [wandb_run.py:_console_start():2199] atexit reg
+2023-09-09 20:29:11,119 INFO    Thread-24 :40832 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-09-09 20:29:11,119 INFO    Thread-24 :40832 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-09-09 20:29:11,119 INFO    Thread-24 :40832 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-09-09 20:29:11,120 INFO    Thread-24 :40832 [wandb_init.py:init():840] run started, returning control to user process
+2023-09-09 20:29:43,189 INFO    Thread-24 :40832 [wandb_run.py:_finish():1934] finishing run msds_mlops2023_lt2/uncategorized/3kah37vc
+2023-09-09 20:29:43,190 INFO    Thread-24 :40832 [jupyter.py:save_history():445] not saving jupyter history
+2023-09-09 20:29:43,190 INFO    Thread-24 :40832 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-09 20:29:43,190 INFO    Thread-24 :40832 [wandb_init.py:_jupyter_teardown():452] cleaning up jupyter logic
+2023-09-09 20:29:43,190 INFO    Thread-24 :40832 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2023-09-09 20:29:43,190 INFO    Thread-24 :40832 [wandb_run.py:_restore():2151] restore
+2023-09-09 20:29:43,190 INFO    Thread-24 :40832 [wandb_run.py:_restore():2157] restore done
+2023-09-09 20:29:48,628 INFO    Thread-24 :40832 [wandb_run.py:_footer_history_summary_info():3557] rendering history
+2023-09-09 20:29:48,629 INFO    Thread-24 :40832 [wandb_run.py:_footer_history_summary_info():3589] rendering summary
+2023-09-09 20:29:48,634 INFO    Thread-24 :40832 [wandb_run.py:_footer_sync_info():3516] logging synced files

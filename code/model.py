@@ -58,12 +58,15 @@ class poem_classifier_model():
         otpt_ts = le.transform(otpt_ts)
         return inpt_tr, inpt_ts, otpt_tr, otpt_ts, max_len
 
-    def train(self, num_words=500, embd_dim=512, lr=.001, epochs=16):
+    def train(self, num_words=500, embd_dim=512, lr=.001, epochs=16, optimizer='adam'):
         inpt_tr, inpt_ts, otpt_tr, otpt_ts = train_test_split(self.df_train['Poem'], self.df_train['Genre'], 
                                                               test_size=.2)
         inpt_tr, inpt_ts, otpt_tr, otpt_ts, max_len = self._tokenize_encode(inpt_tr, inpt_ts, otpt_tr, otpt_ts)
         otpt_act = tf.nn.softmax
-        opt = tf.keras.optimizers.Adam(learning_rate=lr)
+        if optimizer == 'adam':
+            opt = tf.keras.optimizers.Adam(learning_rate=lr)
+        elif optimizer == 'sgd':
+            opt = tf.keras.optimizers.SGD(learning_rate=lr)
         ls = tf.keras.losses.SparseCategoricalCrossentropy()
         model = tf.keras.models.Sequential([tf.keras.layers.Embedding(num_words*3, embd_dim,
                                                                     input_length=max_len),
