@@ -1,0 +1,42 @@
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:29: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('shade.When', 'shade. When')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:30: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now', 'afraid. Now')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:32: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now,', 'afraid. Now,')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:33: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('Big Game.Bigger', 'Big Game. Bigger')
+[nltk_data] Downloading package stopwords to C:\Users\Jesli's
+[nltk_data]     Laptop\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Epoch 1/16
+21/21 [==============================] - 1s 29ms/step - loss: 1.3766 - acc: 0.2825 - val_loss: 1.3654 - val_acc: 0.2440
+Epoch 2/16
+21/21 [==============================] - 0s 23ms/step - loss: 1.3570 - acc: 0.3034 - val_loss: 1.3562 - val_acc: 0.2440
+Epoch 3/16
+21/21 [==============================] - 0s 22ms/step - loss: 1.3430 - acc: 0.3602 - val_loss: 1.3496 - val_acc: 0.2857
+Epoch 4/16
+21/21 [==============================] - 0s 22ms/step - loss: 1.3319 - acc: 0.4036 - val_loss: 1.3425 - val_acc: 0.3333
+Epoch 5/16
+21/21 [==============================] - 1s 24ms/step - loss: 1.3185 - acc: 0.4380 - val_loss: 1.3334 - val_acc: 0.3810
+Epoch 6/16
+21/21 [==============================] - 1s 26ms/step - loss: 1.3011 - acc: 0.5082 - val_loss: 1.3272 - val_acc: 0.3571
+Epoch 7/16
+21/21 [==============================] - 1s 27ms/step - loss: 1.2834 - acc: 0.5172 - val_loss: 1.3170 - val_acc: 0.3750
+Epoch 8/16
+21/21 [==============================] - 1s 27ms/step - loss: 1.2582 - acc: 0.5202 - val_loss: 1.3035 - val_acc: 0.4405
+Epoch 9/16
+21/21 [==============================] - 1s 26ms/step - loss: 1.2335 - acc: 0.5426 - val_loss: 1.2955 - val_acc: 0.3988
+Epoch 10/16
+21/21 [==============================] - 1s 26ms/step - loss: 1.2045 - acc: 0.5486 - val_loss: 1.2857 - val_acc: 0.3929
+Epoch 11/16
+21/21 [==============================] - 1s 25ms/step - loss: 1.1754 - acc: 0.5725 - val_loss: 1.2680 - val_acc: 0.4464
+Epoch 12/16
+21/21 [==============================] - 1s 24ms/step - loss: 1.1437 - acc: 0.5785 - val_loss: 1.2643 - val_acc: 0.4167
+Epoch 13/16
+21/21 [==============================] - 0s 23ms/step - loss: 1.1114 - acc: 0.6114 - val_loss: 1.2494 - val_acc: 0.4583
+Epoch 14/16
+21/21 [==============================] - 0s 21ms/step - loss: 1.0767 - acc: 0.6338 - val_loss: 1.2510 - val_acc: 0.4107
+Epoch 15/16
+21/21 [==============================] - 0s 21ms/step - loss: 1.0446 - acc: 0.6398 - val_loss: 1.2390 - val_acc: 0.4702
+Epoch 16/16

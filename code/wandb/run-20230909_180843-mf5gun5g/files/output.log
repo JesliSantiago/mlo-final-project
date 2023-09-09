@@ -1,0 +1,10 @@
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:29: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('shade.When', 'shade. When')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:30: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now', 'afraid. Now')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:32: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now,', 'afraid. Now,')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:33: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('Big Game.Bigger', 'Big Game. Bigger')
+[nltk_data] Downloading package stopwords to C:\Users\Jesli's
+[nltk_data]     Laptop\AppData\Roaming\nltk_data...
