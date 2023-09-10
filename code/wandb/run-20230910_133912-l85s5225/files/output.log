@@ -1,0 +1,59 @@
+Traceback (most recent call last):
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 950, in send
+    self.connect()
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1417, in connect
+    super().connect()
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 921, in connect
+    self.sock = self._create_connection(
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\socket.py", line 822, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "C:\Users\Jesli's Laptop\AppData\Local\Temp\ipykernel_36588\2502037418.py", line 17, in hyperparam_search
+    _model.load_data()
+  File "c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py", line 27, in load_data
+    self.df_train = pd.read_csv('https://raw.githubusercontent.com/brandynewanek/data/main/Poem_classification%20-%20train_data.csv')
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\common.py", line 558, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\common.py", line 289, in _get_filepath_or_buffer
+    req = urlopen(filepath_or_buffer)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\common.py", line 195, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "c:\Users\Jesli's Laptop\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 1349, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>

@@ -1,0 +1,1 @@
+2023-09-10 13:58:05 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E4950B2580>: Failed to resolve 'o151352.ingest.sentry.io' ([Errno 11001] getaddrinfo failed)")': /api/4504800232407040/envelope/
