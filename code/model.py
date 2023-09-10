@@ -23,10 +23,17 @@ class poem_classifier_model():
         self.otpt_act = tf.nn.softmax
         self.ls = tf.keras.losses.SparseCategoricalCrossentropy()
         self.model = None
+        self.good_model = None
 
-    def load_data(self):
-        self.df_train = pd.read_csv('https://raw.githubusercontent.com/brandynewanek/data/main/Poem_classification%20-%20train_data.csv')
-        self.df_test = pd.read_csv('https://raw.githubusercontent.com/brandynewanek/data/main/Poem_classification%20-%20test_data.csv')
+    def load_data(self, train=None, test=None):
+        if train is None and test is None:
+            self.df_train = pd.read_csv('https://raw.githubusercontent.com/brandynewanek/data/main/Poem_classification%20-%20train_data.csv')
+            self.df_test = pd.read_csv('https://raw.githubusercontent.com/brandynewanek/data/main/Poem_classification%20-%20test_data.csv')
+        elif train is not None and test is not None:
+            self.df_train = train
+            self.df_test = test
+        else:
+            print("Incomplete input. Load failed.")
 
     def preprocess(self):
         self.df_train = self.df_train.dropna()
@@ -47,6 +54,10 @@ class poem_classifier_model():
         self.df_train['Poem'] = self.df_train['Poem'].replace (stp_wrds, '')
         pntn = string.punctuation
         self.df_train['Poem'] = self.df_train['Poem'].replace (pntn, ' ')
+
+        counts = self.df_train['Genre'].value_counts()
+        PCC = sum([i/len(self.df_train)**2 for i in counts])
+        self.thresh = 1.25*PCC
 
     def _tokenize_encode(self, inpt_tr, inpt_ts, otpt_tr, otpt_ts, num_words=500):
         self.tokenizer = tf.keras.preprocessing.text.Tokenizer(num_words=num_words,
