@@ -1,0 +1,56 @@
+Epoch 1/20
+21/21 [==============================] - 1s 11ms/step - loss: 1.3831 - accuracy: 0.2661 - val_loss: 1.3779 - val_accuracy: 0.2560
+Epoch 2/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3776 - accuracy: 0.2795 - val_loss: 1.3724 - val_accuracy: 0.2738
+Epoch 3/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3732 - accuracy: 0.3079 - val_loss: 1.3685 - val_accuracy: 0.2738
+Epoch 4/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3713 - accuracy: 0.2885 - val_loss: 1.3657 - val_accuracy: 0.2500
+Epoch 5/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3703 - accuracy: 0.2990 - val_loss: 1.3638 - val_accuracy: 0.2679
+Epoch 6/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3697 - accuracy: 0.2945 - val_loss: 1.3624 - val_accuracy: 0.2679
+Epoch 7/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3678 - accuracy: 0.2945 - val_loss: 1.3612 - val_accuracy: 0.2679
+Epoch 8/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3675 - accuracy: 0.2900 - val_loss: 1.3603 - val_accuracy: 0.2679
+Epoch 9/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3666 - accuracy: 0.3004 - val_loss: 1.3596 - val_accuracy: 0.2679
+Epoch 10/20
+ 1/21 [>.............................] - ETA: 0s - loss: 1.4069 - accuracy: 0.3125
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:47: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('shade.When', 'shade. When')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:48: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now', 'afraid. Now')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:50: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now,', 'afraid. Now,')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:51: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('Big Game.Bigger', 'Big Game. Bigger')
+[nltk_data] Downloading package stopwords to C:\Users\Jesli's
+[nltk_data]     Laptop\AppData\Roaming\nltk_data...
+21/21 [==============================] - 0s 6ms/step - loss: 1.3673 - accuracy: 0.2825 - val_loss: 1.3592 - val_accuracy: 0.2679
+Epoch 11/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3657 - accuracy: 0.2960 - val_loss: 1.3586 - val_accuracy: 0.2619
+Epoch 12/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3661 - accuracy: 0.3034 - val_loss: 1.3583 - val_accuracy: 0.2619
+Epoch 13/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3654 - accuracy: 0.3004 - val_loss: 1.3580 - val_accuracy: 0.2619
+Epoch 14/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3645 - accuracy: 0.3034 - val_loss: 1.3578 - val_accuracy: 0.2560
+Epoch 15/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3650 - accuracy: 0.3034 - val_loss: 1.3576 - val_accuracy: 0.2619
+Epoch 16/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3669 - accuracy: 0.2885 - val_loss: 1.3575 - val_accuracy: 0.2440
+Epoch 17/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3657 - accuracy: 0.2975 - val_loss: 1.3573 - val_accuracy: 0.2500
+Epoch 18/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3655 - accuracy: 0.2795 - val_loss: 1.3572 - val_accuracy: 0.2440
+Epoch 19/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3648 - accuracy: 0.3019 - val_loss: 1.3569 - val_accuracy: 0.2500
+Epoch 20/20
+21/21 [==============================] - 0s 6ms/step - loss: 1.3651 - accuracy: 0.2930 - val_loss: 1.3568 - val_accuracy: 0.2500
+{'loss': [1.3831170797348022, 1.3775818347930908, 1.3731626272201538, 1.371258020401001, 1.3702725172042847, 1.3696703910827637, 1.3677911758422852, 1.3674858808517456, 1.3665847778320312, 1.3672879934310913, 1.3657480478286743, 1.3660550117492676, 1.3654022216796875, 1.3645192384719849, 1.3649893999099731, 1.3668662309646606, 1.3657450675964355, 1.3655294179916382, 1.36484694480896, 1.3650879859924316], 'accuracy': [0.2660687565803528, 0.2795216739177704, 0.30792227387428284, 0.28849029541015625, 0.298953652381897, 0.29446935653686523, 0.29446935653686523, 0.2899850606918335, 0.3004484176635742, 0.2825112044811249, 0.2959641218185425, 0.3034379780292511, 0.3004484176635742, 0.3034379780292511, 0.3034379780292511, 0.28849029541015625, 0.2974588871002197, 0.2795216739177704, 0.30194321274757385, 0.292974591255188], 'val_loss': [1.3778550624847412, 1.3724089860916138, 1.3685163259506226, 1.3657381534576416, 1.3638185262680054, 1.3623744249343872, 1.361205816268921, 1.3602896928787231, 1.3595741987228394, 1.3591649532318115, 1.3586375713348389, 1.3583250045776367, 1.3579931259155273, 1.3578178882598877, 1.3576284646987915, 1.3574638366699219, 1.3573155403137207, 1.3571618795394897, 1.3568905591964722, 1.3567615747451782], 'val_accuracy': [0.255952388048172, 0.2738095223903656, 0.2738095223903656, 0.25, 0.2678571343421936, 0.2678571343421936, 0.2678571343421936, 0.2678571343421936, 0.2678571343421936, 0.2678571343421936, 0.261904776096344, 0.261904776096344, 0.261904776096344, 0.255952388048172, 0.261904776096344, 0.244047611951828, 0.25, 0.244047611951828, 0.25, 0.25]}
+Traceback (most recent call last):
+  File "C:\Users\Jesli's Laptop\AppData\Local\Temp\ipykernel_39740\2661123221.py", line 25, in hyperparam_search
+    "train_acc": _model.trained_model.history['acc'][i],
+KeyError: 'acc'

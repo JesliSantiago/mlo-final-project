@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.2",
+    "heartbeatAt": "2023-09-10T10:47:39.192701",
+    "startedAt": "2023-09-10T10:47:38.256982",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/JesliSantiago/mlo-final-project.git",
+        "commit": "78ca4371f964fa61c996014eafa2cf5c4b8c70a0"
+    },
+    "email": "jjdsantiago3@gmail.com",
+    "root": "C:/Users/Jesli's Laptop/Desktop/Acads/MLO/mlo-final-project",
+    "host": "LAPTOP-727R0UKU",
+    "username": "Jesli's Laptop",
+    "executable": "c:\\Users\\Jesli's Laptop\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3000.0,
+        "min": 0.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 119.99999618530273,
+            "used": 114.53514099121094
+        }
+    },
+    "memory": {
+        "total": 15.372379302978516
+    }
+}

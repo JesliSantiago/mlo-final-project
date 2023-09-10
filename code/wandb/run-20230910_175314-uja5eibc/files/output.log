@@ -1,0 +1,53 @@
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:43: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('shade.When', 'shade. When')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:44: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now', 'afraid. Now')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:46: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now,', 'afraid. Now,')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:47: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('Big Game.Bigger', 'Big Game. Bigger')
+[nltk_data] Downloading package stopwords to C:\Users\Jesli's
+[nltk_data]     Laptop\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Epoch 1/20
+21/21 [==============================] - 1s 20ms/step - loss: 1.4793 - acc: 0.3423 - val_loss: 1.3321 - val_acc: 0.3393
+Epoch 2/20
+21/21 [==============================] - 0s 12ms/step - loss: 1.0689 - acc: 0.5501 - val_loss: 1.5155 - val_acc: 0.3393
+Epoch 3/20
+21/21 [==============================] - 0s 12ms/step - loss: 0.9152 - acc: 0.6457 - val_loss: 1.8150 - val_acc: 0.3869
+Epoch 4/20
+21/21 [==============================] - 0s 12ms/step - loss: 0.7911 - acc: 0.7055 - val_loss: 1.9523 - val_acc: 0.3810
+Epoch 5/20
+21/21 [==============================] - 0s 13ms/step - loss: 0.8262 - acc: 0.7085 - val_loss: 2.5071 - val_acc: 0.3631
+Epoch 6/20
+21/21 [==============================] - 0s 13ms/step - loss: 0.9754 - acc: 0.6951 - val_loss: 2.5374 - val_acc: 0.4167
+Epoch 7/20
+21/21 [==============================] - 0s 12ms/step - loss: 0.7609 - acc: 0.7578 - val_loss: 2.5274 - val_acc: 0.3988
+Epoch 8/20
+21/21 [==============================] - 0s 13ms/step - loss: 0.7346 - acc: 0.7848 - val_loss: 3.0081 - val_acc: 0.4405
+Epoch 9/20
+21/21 [==============================] - 0s 12ms/step - loss: 0.7999 - acc: 0.7638 - val_loss: 3.4657 - val_acc: 0.3750
+Epoch 10/20
+21/21 [==============================] - 0s 12ms/step - loss: 0.8873 - acc: 0.7578 - val_loss: 3.7448 - val_acc: 0.3690
+Epoch 11/20
+21/21 [==============================] - 0s 11ms/step - loss: 0.7445 - acc: 0.7892 - val_loss: 4.1150 - val_acc: 0.3512
+Epoch 12/20
+21/21 [==============================] - 0s 12ms/step - loss: 0.7445 - acc: 0.8057 - val_loss: 4.4200 - val_acc: 0.4048
+Epoch 13/20
+21/21 [==============================] - 0s 11ms/step - loss: 0.9086 - acc: 0.7773 - val_loss: 4.1425 - val_acc: 0.4107
+Epoch 14/20
+21/21 [==============================] - 0s 11ms/step - loss: 0.7073 - acc: 0.8132 - val_loss: 4.4132 - val_acc: 0.3810
+Epoch 15/20
+21/21 [==============================] - 0s 11ms/step - loss: 0.6157 - acc: 0.8445 - val_loss: 4.8001 - val_acc: 0.4048
+Epoch 16/20
+21/21 [==============================] - 0s 11ms/step - loss: 0.8474 - acc: 0.8042 - val_loss: 5.6524 - val_acc: 0.3512
+Epoch 17/20
+21/21 [==============================] - 0s 11ms/step - loss: 0.8687 - acc: 0.7833 - val_loss: 5.0462 - val_acc: 0.4107
+Epoch 18/20
+21/21 [==============================] - 0s 13ms/step - loss: 0.6843 - acc: 0.8176 - val_loss: 5.4709 - val_acc: 0.3988
+Epoch 19/20
+21/21 [==============================] - 0s 11ms/step - loss: 0.7873 - acc: 0.8386 - val_loss: 5.5069 - val_acc: 0.3869
+Epoch 20/20
+21/21 [==============================] - 0s 11ms/step - loss: 0.9576 - acc: 0.8057 - val_loss: 6.6218 - val_acc: 0.3690
+{'loss': [1.4793468713760376, 1.068931221961975, 0.9151787161827087, 0.7911326885223389, 0.8261529803276062, 0.9753593802452087, 0.7609471082687378, 0.7345698475837708, 0.7998550534248352, 0.88726806640625, 0.7445065379142761, 0.7444718480110168, 0.9085677862167358, 0.7072572112083435, 0.6156955361366272, 0.8474458456039429, 0.8687371015548706, 0.6842774748802185, 0.7872983813285828, 0.957557737827301], 'acc': [0.3423019349575043, 0.5500747561454773, 0.6457399129867554, 0.7055306434631348, 0.7085201740264893, 0.695067286491394, 0.7578475475311279, 0.7847533822059631, 0.7638266086578369, 0.7578475475311279, 0.7892376780509949, 0.8056800961494446, 0.7772794961929321, 0.8131539821624756, 0.8445441126823425, 0.8041853308677673, 0.7832586169242859, 0.8176382780075073, 0.8385650515556335, 0.8056800961494446], 'val_loss': [1.3321218490600586, 1.5155134201049805, 1.8149755001068115, 1.9523391723632812, 2.5070605278015137, 2.537440776824951, 2.5273854732513428, 3.008112668991089, 3.465721845626831, 3.744837760925293, 4.114978790283203, 4.420015811920166, 4.142544269561768, 4.413211822509766, 4.800050735473633, 5.652393817901611, 5.046230316162109, 5.470911502838135, 5.506868839263916, 6.6218414306640625], 'val_acc': [0.3392857015132904, 0.3392857015132904, 0.386904776096344, 0.380952388048172, 0.363095223903656, 0.4166666567325592, 0.3988095223903656, 0.4404761791229248, 0.375, 0.369047611951828, 0.3511904776096344, 0.4047619104385376, 0.4107142984867096, 0.380952388048172, 0.4047619104385376, 0.3511904776096344, 0.4107142984867096, 0.3988095223903656, 0.386904776096344, 0.369047611951828]}
+5/5 [==============================] - 0s 3ms/step - loss: 6.2567 - acc: 0.3467

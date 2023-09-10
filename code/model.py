@@ -24,6 +24,10 @@ class poem_classifier_model():
         self.ls = tf.keras.losses.SparseCategoricalCrossentropy()
         self.model = None
         self.good_model = None
+        self.acc = tf.keras.metrics.Accuracy()
+        self.prec = tf.keras.metrics.Precision()
+        self.recall = tf.keras.metrics.Recall()
+        self.f1 = tf.keras.metrics.F1Score()
 
     def load_data(self, train=None, test=None):
         if train is None and test is None:
@@ -83,7 +87,7 @@ class poem_classifier_model():
                     self.good_model = True
 
     def _save(self, emb, lr, optim):
-        self.model.save(f"../models/{emb}_{lr:.2f}_{optim}.keras")
+        self.model.save(f"../models/{emb}_{lr:.2f}_{optim}_acc_{max(self.trained_model.history['val_acc'])}.keras")
 
     def train(self, num_words=500, embd_dim=512, lr=.001, epochs=16, optimizer='adam'):
         self.good_model = False
@@ -101,6 +105,7 @@ class poem_classifier_model():
                                             tf.keras.layers.Flatten(),
                                             tf.keras.layers.Dense(4, activation=self.otpt_act)
                                             ])
+        # accuracy for now
         self.model.compile(loss=self.ls, optimizer=opt, metrics=['acc'])
         self.trained_model = self.model.fit(inpt_tr, otpt_tr, epochs=epochs, validation_data=(inpt_ts, otpt_ts))
         self._is_good()

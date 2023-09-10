@@ -1,0 +1,56 @@
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:47: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('shade.When', 'shade. When')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:48: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now', 'afraid. Now')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:50: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now,', 'afraid. Now,')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:51: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('Big Game.Bigger', 'Big Game. Bigger')
+[nltk_data] Downloading package stopwords to C:\Users\Jesli's
+[nltk_data]     Laptop\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Epoch 1/20
+21/21 [==============================] - 1s 16ms/step - loss: 1.3815 - accuracy: 0.2407 - val_loss: 1.3688 - val_accuracy: 0.2738
+Epoch 2/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3736 - accuracy: 0.2750 - val_loss: 1.3617 - val_accuracy: 0.3036
+Epoch 3/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3703 - accuracy: 0.2661 - val_loss: 1.3591 - val_accuracy: 0.3036
+Epoch 4/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3692 - accuracy: 0.2735 - val_loss: 1.3577 - val_accuracy: 0.3036
+Epoch 5/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3682 - accuracy: 0.2720 - val_loss: 1.3567 - val_accuracy: 0.3036
+Epoch 6/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3669 - accuracy: 0.2765 - val_loss: 1.3565 - val_accuracy: 0.3155
+Epoch 7/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3661 - accuracy: 0.2975 - val_loss: 1.3560 - val_accuracy: 0.3095
+Epoch 8/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3645 - accuracy: 0.2810 - val_loss: 1.3561 - val_accuracy: 0.3036
+Epoch 9/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3653 - accuracy: 0.2780 - val_loss: 1.3559 - val_accuracy: 0.2917
+Epoch 10/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3650 - accuracy: 0.2855 - val_loss: 1.3557 - val_accuracy: 0.2917
+Epoch 11/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3643 - accuracy: 0.3019 - val_loss: 1.3557 - val_accuracy: 0.3036
+Epoch 12/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3629 - accuracy: 0.3049 - val_loss: 1.3556 - val_accuracy: 0.2976
+Epoch 13/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3635 - accuracy: 0.2930 - val_loss: 1.3557 - val_accuracy: 0.2976
+Epoch 14/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3629 - accuracy: 0.3049 - val_loss: 1.3560 - val_accuracy: 0.2679
+Epoch 15/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3641 - accuracy: 0.2930 - val_loss: 1.3560 - val_accuracy: 0.2976
+Epoch 16/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3625 - accuracy: 0.2855 - val_loss: 1.3560 - val_accuracy: 0.3036
+Epoch 17/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3617 - accuracy: 0.3049 - val_loss: 1.3559 - val_accuracy: 0.2976
+Epoch 18/20
+10/21 [=============>................] - ETA: 0s - loss: 1.3723 - accuracy: 0.2875
+Traceback (most recent call last):
+  File "C:\Users\Jesli's Laptop\AppData\Local\Temp\ipykernel_39740\2661123221.py", line 25, in hyperparam_search
+    "train_acc": _model.trained_model.history['acc'][i],
+21/21 [==============================] - 0s 8ms/step - loss: 1.3610 - accuracy: 0.3079 - val_loss: 1.3561 - val_accuracy: 0.3036
+Epoch 19/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3613 - accuracy: 0.2706 - val_loss: 1.3562 - val_accuracy: 0.2976
+Epoch 20/20
+21/21 [==============================] - 0s 8ms/step - loss: 1.3596 - accuracy: 0.3004 - val_loss: 1.3562 - val_accuracy: 0.2738
+{'loss': [1.3814998865127563, 1.3735915422439575, 1.3702926635742188, 1.3692426681518555, 1.3682376146316528, 1.3668506145477295, 1.3660553693771362, 1.3644914627075195, 1.3653420209884644, 1.3649606704711914, 1.364261507987976, 1.3629403114318848, 1.3635164499282837, 1.362890362739563, 1.3641090393066406, 1.3625009059906006, 1.361745834350586, 1.3609812259674072, 1.361342191696167, 1.359553575515747], 'accuracy': [0.24065770208835602, 0.27503737807273865, 0.2660687565803528, 0.2735426127910614, 0.27204781770706177, 0.2765321433544159, 0.2974588871002197, 0.28101643919944763, 0.27802690863609314, 0.28550073504447937, 0.30194321274757385, 0.30493274331092834, 0.292974591255188, 0.30493274331092834, 0.292974591255188, 0.28550073504447937, 0.30493274331092834, 0.30792227387428284, 0.2705530524253845, 0.3004484176635742], 'val_loss': [1.3687574863433838, 1.361707091331482, 1.3591244220733643, 1.3576598167419434, 1.3566670417785645, 1.3565080165863037, 1.3560034036636353, 1.3560755252838135, 1.355939269065857, 1.3556923866271973, 1.3557409048080444, 1.3555829524993896, 1.3556642532348633, 1.356027364730835, 1.35598886013031, 1.3560194969177246, 1.355923056602478, 1.3560746908187866, 1.3562389612197876, 1.3561986684799194], 'val_accuracy': [0.2738095223903656, 0.3035714328289032, 0.3035714328289032, 0.3035714328289032, 0.3035714328289032, 0.3154761791229248, 0.3095238208770752, 0.3035714328289032, 0.2916666567325592, 0.2916666567325592, 0.3035714328289032, 0.2976190447807312, 0.2976190447807312, 0.2678571343421936, 0.2976190447807312, 0.3035714328289032, 0.2976190447807312, 0.3035714328289032, 0.2976190447807312, 0.2738095223903656]}
