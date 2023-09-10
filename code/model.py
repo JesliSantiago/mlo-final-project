@@ -75,8 +75,18 @@ class poem_classifier_model():
         otpt_tr = self.le.transform(otpt_tr)
         otpt_ts = self.le.transform(otpt_ts)
         return inpt_tr, inpt_ts, otpt_tr, otpt_ts
+    
+    def _is_good(self):
+        if self.trained_model is not None:
+            for val_acc in self.trained_model.history["val_acc"]:
+                if val_acc > self.thresh:
+                    self.good_model = True
+
+    def _save(self, emb, lr, optim):
+        self.model.save(f"../models/{emb}_{lr:.2f}_{optim}.keras")
 
     def train(self, num_words=500, embd_dim=512, lr=.001, epochs=16, optimizer='adam'):
+        self.good_model = False
         inpt_tr, inpt_ts, otpt_tr, otpt_ts = train_test_split(self.df_train['Poem'], self.df_train['Genre'], 
                                                               test_size=.2)
         inpt_tr, inpt_ts, otpt_tr, otpt_ts = self._tokenize_encode(inpt_tr, inpt_ts, otpt_tr, otpt_ts)
@@ -93,6 +103,8 @@ class poem_classifier_model():
                                             ])
         self.model.compile(loss=self.ls, optimizer=opt, metrics=['acc'])
         self.trained_model = self.model.fit(inpt_tr, otpt_tr, epochs=epochs, validation_data=(inpt_ts, otpt_ts))
+        self._is_good()
+        self._save(embd_dim, lr, optimizer)
 
     def test(self):
         if self.trained_model is not None:
@@ -104,4 +116,7 @@ class poem_classifier_model():
             return results
         else:
             print("No trained model.")
+
+    
+
 

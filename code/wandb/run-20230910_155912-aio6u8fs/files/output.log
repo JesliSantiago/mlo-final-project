@@ -1,0 +1,112 @@
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:43: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('shade.When', 'shade. When')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:44: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now', 'afraid. Now')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:46: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('afraid.Now,', 'afraid. Now,')
+c:\Users\Jesli's Laptop\Desktop\Acads\MLO\mlo-final-project\code\model.py:47: FutureWarning: The default value of regex will change from True to False in a future version.
+  self.df_train['Poem'] = self.df_train['Poem'].str.replace('Big Game.Bigger', 'Big Game. Bigger')
+[nltk_data] Downloading package stopwords to C:\Users\Jesli's
+[nltk_data]     Laptop\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Epoch 1/50
+21/21 [==============================] - 1s 19ms/step - loss: 1.4597 - acc: 0.3214 - val_loss: 1.4121 - val_acc: 0.3690
+Epoch 2/50
+21/21 [==============================] - 0s 12ms/step - loss: 1.1226 - acc: 0.5351 - val_loss: 1.5343 - val_acc: 0.3631
+Epoch 3/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.8544 - acc: 0.6786 - val_loss: 2.0083 - val_acc: 0.3333
+Epoch 4/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.8625 - acc: 0.6771 - val_loss: 1.9925 - val_acc: 0.3631
+Epoch 5/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.6585 - acc: 0.7623 - val_loss: 2.3766 - val_acc: 0.3036
+Epoch 6/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.6254 - acc: 0.7459 - val_loss: 2.6809 - val_acc: 0.3393
+Epoch 7/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5536 - acc: 0.7982 - val_loss: 2.8419 - val_acc: 0.3155
+Epoch 8/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5870 - acc: 0.8176 - val_loss: 3.1928 - val_acc: 0.2917
+Epoch 9/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5874 - acc: 0.8117 - val_loss: 3.0709 - val_acc: 0.3393
+Epoch 10/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5391 - acc: 0.8132 - val_loss: 3.5305 - val_acc: 0.3155
+Epoch 11/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4645 - acc: 0.8356 - val_loss: 3.8074 - val_acc: 0.3214
+Epoch 12/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5586 - acc: 0.8475 - val_loss: 3.7257 - val_acc: 0.3512
+Epoch 13/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5182 - acc: 0.8430 - val_loss: 4.0949 - val_acc: 0.3571
+Epoch 14/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4382 - acc: 0.8759 - val_loss: 4.5637 - val_acc: 0.3274
+Epoch 15/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4268 - acc: 0.8595 - val_loss: 4.3363 - val_acc: 0.2976
+Epoch 16/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4765 - acc: 0.8505 - val_loss: 4.6821 - val_acc: 0.2976
+Epoch 17/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4493 - acc: 0.8879 - val_loss: 5.1353 - val_acc: 0.3095
+Epoch 18/50
+21/21 [==============================] - 0s 14ms/step - loss: 0.4503 - acc: 0.8610 - val_loss: 4.7469 - val_acc: 0.3571
+Epoch 19/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.3312 - acc: 0.8969 - val_loss: 4.8556 - val_acc: 0.3274
+Epoch 20/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4440 - acc: 0.8909 - val_loss: 5.6824 - val_acc: 0.2976
+Epoch 21/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5501 - acc: 0.8490 - val_loss: 5.3067 - val_acc: 0.3214
+Epoch 22/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4385 - acc: 0.8729 - val_loss: 5.6219 - val_acc: 0.3036
+Epoch 23/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4634 - acc: 0.8759 - val_loss: 5.9565 - val_acc: 0.3214
+Epoch 24/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4670 - acc: 0.8834 - val_loss: 6.1997 - val_acc: 0.3393
+Epoch 25/50
+21/21 [==============================] - 0s 11ms/step - loss: 0.4812 - acc: 0.8804 - val_loss: 6.3924 - val_acc: 0.2917
+Epoch 26/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5025 - acc: 0.8685 - val_loss: 6.7359 - val_acc: 0.3631
+Epoch 27/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4876 - acc: 0.8864 - val_loss: 6.6751 - val_acc: 0.3750
+Epoch 28/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4953 - acc: 0.8909 - val_loss: 6.4552 - val_acc: 0.3155
+Epoch 29/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4810 - acc: 0.8864 - val_loss: 7.0723 - val_acc: 0.2857
+Epoch 30/50
+21/21 [==============================] - 0s 13ms/step - loss: 0.6026 - acc: 0.8685 - val_loss: 6.7175 - val_acc: 0.3155
+Epoch 31/50
+21/21 [==============================] - 0s 11ms/step - loss: 0.6412 - acc: 0.8475 - val_loss: 7.1692 - val_acc: 0.2976
+Epoch 32/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5302 - acc: 0.8849 - val_loss: 7.1646 - val_acc: 0.3155
+Epoch 33/50
+21/21 [==============================] - 0s 11ms/step - loss: 0.5554 - acc: 0.8834 - val_loss: 7.0758 - val_acc: 0.3333
+Epoch 34/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.3840 - acc: 0.9028 - val_loss: 6.9170 - val_acc: 0.3274
+Epoch 35/50
+21/21 [==============================] - 0s 11ms/step - loss: 0.3426 - acc: 0.9073 - val_loss: 7.3049 - val_acc: 0.3095
+Epoch 36/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.3560 - acc: 0.9043 - val_loss: 7.6659 - val_acc: 0.3214
+Epoch 37/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4454 - acc: 0.9133 - val_loss: 7.4448 - val_acc: 0.2917
+Epoch 38/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4306 - acc: 0.9118 - val_loss: 7.8590 - val_acc: 0.3036
+Epoch 39/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5179 - acc: 0.8879 - val_loss: 7.9152 - val_acc: 0.3393
+Epoch 40/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.7635 - acc: 0.8595 - val_loss: 7.7355 - val_acc: 0.3274
+Epoch 41/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.5845 - acc: 0.8909 - val_loss: 7.9386 - val_acc: 0.3333
+Epoch 42/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4417 - acc: 0.9223 - val_loss: 8.3490 - val_acc: 0.3571
+Epoch 43/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4423 - acc: 0.9028 - val_loss: 7.6371 - val_acc: 0.3274
+Epoch 44/50
+21/21 [==============================] - 0s 14ms/step - loss: 0.3942 - acc: 0.9118 - val_loss: 8.0016 - val_acc: 0.3095
+Epoch 45/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.3975 - acc: 0.9088 - val_loss: 7.9523 - val_acc: 0.3095
+Epoch 46/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.3417 - acc: 0.9372 - val_loss: 8.0028 - val_acc: 0.3036
+Epoch 47/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.3726 - acc: 0.9178 - val_loss: 8.3704 - val_acc: 0.3214
+Epoch 48/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4676 - acc: 0.9148 - val_loss: 8.3203 - val_acc: 0.2917
+Epoch 49/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4260 - acc: 0.9268 - val_loss: 8.3314 - val_acc: 0.2976
+Epoch 50/50
+21/21 [==============================] - 0s 12ms/step - loss: 0.4980 - acc: 0.9103 - val_loss: 8.2707 - val_acc: 0.3036
+5/5 [==============================] - 0s 3ms/step - loss: 9.2618 - acc: 0.2800
