@@ -81,19 +81,7 @@ def test_classification(max_epochs_per_iteration=10, max_iterations=50):  # safe
         iteration += 1
         print(f"\nTraining iteration {iteration}...")
         poem_model.train(epochs=max_epochs_per_iteration)
-        
-        # Predict on the validation set
-        X_valid = poem_model.df_test['Poem']
-        y_valid = poem_model.df_test['Genre']
-
-        input_valid = poem_model.tokenizer.texts_to_sequences(X_valid)
-        input_valid = tf.keras.utils.pad_sequences(input_valid, padding='pre', 
-                                                   maxlen=poem_model.max_len)
-        y_pred = poem_model.model.predict(input_valid)
-        y_pred_labels = np.argmax(y_pred, axis=1)
-        y_valid_transformed = poem_model.le.transform(y_valid)
-        
-        acc = accuracy_score(y_valid_transformed, y_pred_labels)
+        _, acc = poem_model.test()
         
         # Store the best accuracy achieved
         if acc > best_accuracy:
@@ -111,6 +99,5 @@ def test_classification(max_epochs_per_iteration=10, max_iterations=50):  # safe
         print(f"Max iterations reached. Best validation accuracy achieved: {best_accuracy:.2f}")
 
     return best_accuracy
-
 
     
