@@ -60,7 +60,7 @@ class poem_classifier_model():
         self.df_train['Poem'] = self.df_train['Poem'].replace (pntn, ' ')
 
         counts = self.df_train['Genre'].value_counts()
-        PCC = sum([i/len(self.df_train)**2 for i in counts])
+        PCC = sum([(i/len(self.df_train))**2 for i in counts])
         self.thresh = 1.25*PCC
 
     def _tokenize_encode(self, inpt_tr, inpt_ts, otpt_tr, otpt_ts, num_words=500):
@@ -106,7 +106,11 @@ class poem_classifier_model():
                                             tf.keras.layers.Dense(4, activation=self.otpt_act)
                                             ])
         # accuracy for now
-        self.model.compile(loss=self.ls, optimizer=opt, metrics=['acc'])
+        self.model.compile(loss=self.ls, optimizer=opt, metrics=["acc"])
+        otpt_tr = tf.cast(otpt_tr, dtype=tf.float32)
+        # print(inpt_tr, np.shape(inpt_tr))
+        # print(otpt_tr)
+        # print(inpt.ts)
         self.trained_model = self.model.fit(inpt_tr, otpt_tr, epochs=epochs, validation_data=(inpt_ts, otpt_ts))
         self._is_good()
         self._save(embd_dim, lr, optimizer)
