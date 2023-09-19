@@ -11,6 +11,7 @@ from sklearn.metrics import accuracy_score
 
 import nltk
 import string
+import pickle
 
 class poem_classifier_model():
     def __init__(self):
@@ -33,6 +34,9 @@ class poem_classifier_model():
         if train is None and test is None:
             self.df_train = pd.read_csv('https://raw.githubusercontent.com/brandynewanek/data/main/Poem_classification%20-%20train_data.csv')
             self.df_test = pd.read_csv('https://raw.githubusercontent.com/brandynewanek/data/main/Poem_classification%20-%20test_data.csv')
+            # self.prec = tf.keras.metrics.Precision(num_classes=4)
+            # self.recall = tf.keras.metrics.Recall(num_classes=4)
+            # self.f1 = tf.keras.metrics.F1Score(num_classes=4)
         elif train is not None and test is not None:
             self.df_train = train
             self.df_test = test
@@ -88,12 +92,18 @@ class poem_classifier_model():
 
     def _save(self, emb, lr, optim):
         self.model.save(f"../models/{emb}_{lr:.2f}_{optim}_acc_{max(self.trained_model.history['val_acc'])}.keras")
+        with open(f"../tokenizers/{emb}_{lr:.2f}_{optim}_acc_{max(self.trained_model.history['val_acc'])}_maxlen_{self.max_len}.pickle", 'wb') as handle:
+            pickle.dump(self.tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
 
     def train(self, num_words=500, embd_dim=512, lr=.001, epochs=16, optimizer='adam'):
         self.good_model = False
         inpt_tr, inpt_ts, otpt_tr, otpt_ts = train_test_split(self.df_train['Poem'], self.df_train['Genre'], 
                                                               test_size=.2)
+        # print(inpt_ts)
+        # print(otpt_ts)
         inpt_tr, inpt_ts, otpt_tr, otpt_ts = self._tokenize_encode(inpt_tr, inpt_ts, otpt_tr, otpt_ts)
+        # print(otpt_ts)
         if optimizer == 'adam':
             opt = tf.keras.optimizers.Adam(learning_rate=lr)
         elif optimizer == 'sgd':
@@ -106,11 +116,15 @@ class poem_classifier_model():
                                             tf.keras.layers.Dense(4, activation=self.otpt_act)
                                             ])
         # accuracy for now
-        self.model.compile(loss=self.ls, optimizer=opt, metrics=["acc"])
-        otpt_tr = tf.cast(otpt_tr, dtype=tf.float32)
-        # print(inpt_tr, np.shape(inpt_tr))
-        # print(otpt_tr)
-        # print(inpt.ts)
+        # self.model.compile(loss=self.ls, optimizer=opt, metrics=[self.prec])
+        self.model.compile(loss=self.ls, optimizer=opt, metrics=['acc'])
+        # otpt_tr = tf.cast(otpt_tr, dtype=tf.float32)
+        # print("train")
+        # # print(inpt_tr, np.shape(inpt_tr))
+        # print(np.shape(otpt_tr))
+        # print("test")
+        # # print(inpt_ts, np.shape(inpt_ts))
+        # print(np.shape(otpt_ts))
         self.trained_model = self.model.fit(inpt_tr, otpt_tr, epochs=epochs, validation_data=(inpt_ts, otpt_ts))
         self._is_good()
         self._save(embd_dim, lr, optimizer)
