@@ -92,6 +92,8 @@ class poem_classifier_model():
 
     def _save(self, emb, lr, optim):
         self.model.save(f"../models/{emb}_{lr:.2f}_{optim}_acc_{max(self.trained_model.history['val_acc'])}.keras")
+        self.model.save_weights(f"../model_weights/{emb}_{lr:.2f}_{optim}_acc_{max(self.trained_model.history['val_acc'])}.h5")     
+        self.model.save_pretrained(f"../model_weights/{emb}_{lr:.2f}_{optim}_acc_{max(self.trained_model.history['val_acc'])}_pt.h5")        
         with open(f"../tokenizers/{emb}_{lr:.2f}_{optim}_acc_{max(self.trained_model.history['val_acc'])}_maxlen_{self.max_len}.pickle", 'wb') as handle:
             pickle.dump(self.tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
